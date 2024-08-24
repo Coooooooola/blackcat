@@ -1,0 +1,7 @@
+build/
+node_modules/
+.husky/
+*.ts
+*.tsx
+*.js
+*.jsx

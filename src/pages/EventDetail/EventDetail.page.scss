@@ -1,0 +1,360 @@
+@import "@src/variables.g.scss";
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  padding-bottom: 56px;
+}
+
+.scroller {
+  overflow: scroll;
+  height: 100%;
+}
+
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.channel {
+  color: $primary;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid $primary-light;
+}
+
+.channelLine {
+  display: flex;
+}
+
+.titleLine {
+  margin-top: 15px;
+  font-size: 20px;
+  color: $primary-dark;
+}
+
+.profileLine {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 7px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+}
+
+.username {
+  font-size: 14px;
+  color: $primary-neutral;
+}
+
+.date {
+  margin-top: auto;
+  font-size: 12px;
+  color: $disabled-background-text-light;
+}
+
+.textBox {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab.active {
+  color: $complement-dark-1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  fill: $disabled-background-text-light;
+}
+
+.tab.active > .icon {
+  fill: $complement-dark-1;
+}
+
+.tabs {
+  display: flex;
+  padding: 13px 20px;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: $white;
+  position: sticky;
+  top: 0;
+}
+
+.tab {
+  font-size: 12px;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  background-color: #e8e8e8;
+}
+
+.subDivider {
+  background-color: #e8e8e8;
+  height: 1px;
+  margin-left: 16px;
+}
+
+.box {
+  padding: 16px;
+}
+
+.gallery {
+  display: flex;
+  overflow: scroll;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.article {
+  font-size: 14px;
+  color: $primary-neutral;
+  margin-top: 12px;
+}
+
+.section {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.subTitle {
+  color: $primary;
+  font-size: 16px;
+  font-family: "SourceSansPro-SemiBold", sans-serif;
+  display: flex;
+  align-items: stretch;
+}
+
+.notice {
+  width: 4px;
+  border-radius: 4px;
+  background-color: $primary;
+  margin-right: 4px;
+}
+
+.comment {
+  display: flex;
+}
+
+.comment:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.commentProfile {
+  width: 32px;
+  height: 32px;
+}
+
+.replySvg {
+  width: 16px;
+  height: 16px;
+  fill: $complement;
+}
+
+.commentMiddle {
+  flex: 1;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.commentUsername {
+  font-size: 12px;
+  color: $primary;
+  margin-right: 12px;
+}
+
+.commentContent {
+  margin-top: 4px;
+  font-size: 14px;
+  color: $primary-neutral;
+}
+
+.commentBrief {
+  display: flex;
+  align-items: center;
+}
+
+.commentDate {
+  font-size: 10px;
+  color: $disabled-background-text-light;
+}
+
+.participantSvg {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  fill: #ac8ec9;
+}
+
+.participantSvg.goingSvg.active {
+  fill: $complement-dark-1;
+}
+
+.participantSvg.likeSvg.active {
+  fill: #ff5c5c;
+}
+
+.participantProfile {
+  width: 24px;
+  height: 24px;
+}
+
+.participantProfile:not(:last-child) {
+  margin-right: 7px;
+}
+
+.participantProfiles {
+  display: flex;
+  flex: 1;
+}
+
+.participantBox {
+  display: flex;
+}
+
+.participantLeft {
+  width: 80px;
+  font-size: 12px;
+  line-height: 12px;
+  color: $primary-neutral;
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 56px;
+  display: flex;
+}
+
+.bottomSvg {
+  width: 24px;
+  height: 24px;
+  fill: $primary-dark;
+}
+
+.bottomSvg.goingSvg {
+  fill: $complement-dark-2;
+  margin-right: 12px;
+}
+
+.bottomLeft {
+  background-color: $primary;
+  display: flex;
+  justify-content: space-around;
+  flex: 1.2857142857142858;
+  align-items: center;
+}
+
+.bottomRight {
+  background-color: $complement;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: $complement-dark-2;
+}
+
+.bottomClickable {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomSvg.likeSvg.active {
+  fill: $complement;
+}
+
+.bottomSvg.goingSvg.active {
+  fill: $primary;
+}
+
+.bottomRight.active {
+  color: $primary;
+}
+
+.image {
+  max-width: 180px;
+  height: 100px;
+  border-radius: 14px;
+}
+
+.image:not(:first-child) {
+  margin-left: 12px;
+}
+
+.address {
+  margin-top: 8px;
+  font-size: 14px;
+  color: $primary-neutral;
+  font-family: "SourceSansPro-SemiBold", sans-serif;
+}
+
+.addressDetail {
+  font-size: 14px;
+  color: $primary-neutral;
+  margin-bottom: 8px;
+}
+
+.map {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.when {
+  display: flex;
+}
+
+.timeDateSvg {
+  width: 16px;
+  height: 16px;
+  fill: $complement;
+  margin-right: 4px;
+}
+
+.timeDate {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: $primary-neutral;
+  margin-bottom: 6px;
+}
+
+.bigTime {
+  font-size: 32px;
+  color: $complement-dark-1;
+}
+
+.ampm {
+  font-size: 12px;
+  color: $complement-dark-1;
+}
+
+.display {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timeDivider {
+  width: 1px;
+  background-color: #e8e8e8;
+}

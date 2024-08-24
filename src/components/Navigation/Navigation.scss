@@ -1,0 +1,40 @@
+@import "@src/variables.g.scss";
+
+.container {
+  width: 100vw;
+  flex-shrink: 0;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 14px;
+  background-color: $primary;
+}
+
+.menuBtn {
+  width: 24px;
+  height: 24px;
+  fill: $primary-dark;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+  fill: $complement;
+}
+
+.main {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+}
+
+.profile {
+  width: 24px;
+  height: 24px;
+}

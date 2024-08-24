@@ -1,0 +1,99 @@
+@import "@src/variables.g.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $complement;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -129px;
+  background-image: url("@src/images/Street-Dance-01.jpg");
+  position: relative;
+  z-index: 0;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($primary, 0.7);
+  z-index: -1;
+}
+
+.welcome {
+  margin-top: 69px;
+}
+
+.name {
+  margin-top: 16px;
+}
+
+.logo {
+  margin-top: 37px;
+  width: 64px;
+  height: 64px;
+  border: 1px $complement solid;
+  border-radius: 50%;
+  display: flex;
+  box-sizing: border-box;
+  fill: $complement;
+  padding: 7px 11px 11px 9px;
+}
+
+.inputBox {
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px $primary-light solid;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.emailInput {
+  margin-top: auto;
+}
+
+.passwordInput {
+  margin-top: 16px;
+  margin-bottom: 55px;
+}
+
+.inputIcon {
+  width: 13.3px;
+  height: 13.3px;
+  padding: 13.3px 7.3px 13.3px 13.3px;
+  fill: $primary-light;
+}
+
+.input {
+  flex: 1;
+  padding-right: 13.3px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 20px;
+  color: $primary-dark;
+}
+
+.input::placeholder {
+  color: #ac8ec9;
+}
+
+.signIn {
+  background-color: $complement;
+  color: $primary-dark;
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+}

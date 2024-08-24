@@ -1,0 +1,124 @@
+@import "@src/variables.g.scss";
+
+.card {
+  padding: 16px 16px 13px 16px;
+  position: relative;
+}
+
+.card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(100% - 16px);
+  height: 1px;
+  background-color: #e8e8e8;
+}
+
+.firstLine {
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  width: 20px;
+  height: 20px;
+}
+
+.username {
+  margin-left: 8px;
+  font-size: 12px;
+  color: $primary-neutral;
+}
+
+.channel {
+  margin-left: auto;
+  color: $primary;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid $primary-light;
+}
+
+.time {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.timeSvg {
+  width: 12px;
+  height: 12px;
+  fill: $primary;
+}
+
+.timeText {
+  margin-left: 5px;
+  font-size: 12px;
+  color: $primary;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 18px;
+  font-family: "SourceSansPro-Semibold", sans-serif;
+  color: $primary-dark;
+}
+
+.article {
+  font-size: 14px;
+  color: $primary-neutral;
+  margin-top: 12px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.toggle:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon {
+  width: 8px;
+}
+
+.text {
+  margin-left: 5px;
+}
+
+.toggleIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.confirmGoing {
+  fill: $complement-dark-1;
+}
+
+.going {
+  fill: #ac8ec9;
+}
+
+.confirmLike {
+  fill: #ff5c5c;
+}
+
+.like {
+  fill: #ac8ec9;
+}
+
+.togglesLine {
+  display: flex;
+  font-size: 12px;
+  color: $primary-dark;
+  margin-top: 8px;
+}
+
+.toggleArea {
+  display: flex;
+}

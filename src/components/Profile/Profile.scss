@@ -1,0 +1,11 @@
+@import "@src/variables.g.scss";
+
+.profileImg {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.profileSvg {
+  fill: $primary-dark;
+}

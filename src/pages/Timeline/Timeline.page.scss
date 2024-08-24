@@ -1,0 +1,19 @@
+.viewport {
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}

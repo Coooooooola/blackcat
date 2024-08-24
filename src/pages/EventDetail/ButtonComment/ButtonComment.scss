@@ -1,0 +1,42 @@
+@import "@src/variables.g.scss";
+
+.inputBox {
+  flex: 4;
+  background-color: $primary;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 14px;
+}
+
+.crossSvg {
+  width: 15px;
+  height: 15px;
+  fill: $complement;
+  margin-right: 6px;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid $white;
+  height: 32px;
+  flex: 1;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0 15px;
+}
+
+.send {
+  flex: 1;
+  background-color: $complement;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.sendSvg {
+  width: 28px;
+  height: 28px;
+  fill: $primary;
+}

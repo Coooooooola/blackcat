@@ -1,0 +1,6 @@
+*.js
+*.d.ts
+config/
+build/
+node_modules/
+.husky/

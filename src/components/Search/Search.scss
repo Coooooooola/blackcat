@@ -1,0 +1,90 @@
+@import "@src/variables.g.scss";
+
+.search {
+  margin-left: -240px;
+  width: 240px;
+  background-color: $primary-dark;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectArea {
+  padding: 10px 16px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectTitle {
+  padding: 1px;
+  color: #ac8ec9;
+  font-size: 12px;
+  padding-bottom: 2px;
+  border-bottom: 1px $primary solid;
+}
+
+.selectList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.selectText {
+  color: $white;
+  padding: 3px 7px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.selectText.active {
+  color: $primary-dark;
+  background-color: $complement-light;
+}
+
+.searchBtn {
+  background-color: $complement;
+  color: $primary-dark;
+  margin-top: auto;
+  height: 64px;
+  display: flex;
+  text-align: center;
+}
+
+.searchSvg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.searchTextBox {
+  margin: auto;
+}
+
+.channelArea {
+  margin-top: 24px;
+  font-family: "SourceSansPro-SemiBold", sans-serif;
+}
+
+.selectChannel {
+  color: $white;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 5px 11px;
+  border-radius: 12px;
+  border: 1px solid $primary-light;
+  margin-bottom: 9px;
+  margin-right: 12px;
+}
+
+.selectChannel.active {
+  color: $primary-dark;
+  background-color: $complement-light;
+  border-color: $complement-light;
+}
+
+.searchHint {
+  font-size: 10px;
+  color: $primary;
+}
